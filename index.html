@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/stylecelulares.css">
+
+     <style>
+     /*   iframe {
+    transform: rotateY(180deg); 
+    
+    transition: transform 1s ease;} /* Para animar la rotación */
+ 
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <div class="logo">
+                <img src="../Img/celcuotas.png" alt="Nombre de tu marca">
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inicio </a></li>
+                    <li> <a href="Productos.html">Productos </a></li>
+                    <li> <a href="sobrenosotros.html">Sobre nosotros </a></li>
+                    <li> <a href="contacto.html">Contacto </a></li>
+                    <li> <a href="login.html">Inicia Sesión </a></li>
+
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="../Img/carrito-compras-desarrollo-tienda-virtual.png" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <a href="#" id="vaciar_carrito " class="btn-3"> Vaciar Carrito de Compras</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <span>Bienvenidos a Celcuotas </span>
+                <h1>Ofertas especiales </h1>
+                <p>
+                    En Celcuotas, te ofrecemos una amplia selección de los últimos modelos de teléfonos celulares, 
+                    disponibles con opciones de financiamiento a cuotas que se adaptan a tus necesidades.
+                     Ya no tienes que esperar para obtener el teléfono de tus sueños. 
+                     Nuestro objetivo es hacer que la tecnología más avanzada sea accesible para todos,
+                      brindándote la posibilidad de disfrutar de un nuevo celular de manera conveniente y asequible.
+                </p>
+                <div class="buttons">
+                    <a href="../Html/credito.html" class="btn-1">Creditos</a>
+                    <a href="#" class="btn-1">Leer más</a>
+                </div>
+
+            </div>
+            <div class="">
+                <iframe src="https://app.vectary.com/p/4rrqboH2cgPkcKDDWw8xK0" frameborder="0" width="100%" height="450"></iframe>
+            </div>
+            
+    </header>
+    <section class="credito container">
+        <div class="credito-content">
+            <div class="credito-form-container">
+                <h2>Calculadora de crédito para teléfonos</h2>
+                <form id="credito-form" class="credito-form">
+                    <input type="number" id="precio" placeholder="Precio del teléfono ($)" required>
+                    <input type="number" id="cuotas" placeholder="Número de cuotas" required>
+                    <label for="tasa">Tasa de interés (%):</label>
+                    <input type="number" id="tasa" placeholder="10" value="10" disabled><br><br>
+                    <button type="button" onclick="calcularCredito()" class="btn-3">Calcular crédito</button>
+                </form>
+                <div id="resultado"></div> <!-- Aquí se mostrará el resultado del cálculo -->
+            </div>
+            <div class="credito-img">
+                <img src="../Img/post.png" alt="Imagen decorativa">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calcularCredito() {
+            // Obtener los valores ingresados por el usuario
+            var precio = parseFloat(document.getElementById("precio").value);
+            var cuotas = parseInt(document.getElementById("cuotas").value);
+            var tasa = 10; // Tasa de interés fija del 10% anual
+
+            // Convertir la tasa de interés anual a mensual
+            var interesMensual = tasa / 100 / 12;
+
+            // Calcular el valor de cada cuota
+            var cuotaMensual = (precio * interesMensual) / (1 - Math.pow(1 + interesMensual, -cuotas));
+            var montoTotal = cuotaMensual * cuotas;
+
+            // Mostrar el resultado
+            var resultado = "El monto total del crédito es: $" + montoTotal.toFixed(2);
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+
+
+
+    <main class="productos container">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <div class="productos-container">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="../Img/sam.png" alt="Samsung Galaxy S21">
+                    <h3>Samsung Galaxy S21</h3>
+                    <p>Precio: $1000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito" id="agregar-carrito">Agregar al carrito</button>
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Pantalla: 6.2 pulgadas</li>
+                            <li>Memoria RAM: 8 GB</li>
+                            <li>Almacenamiento: 128 GB</li>
+                            <!-- Agregar más especificaciones según sea necesario -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="../Img/iphone14.png" alt="Samsung Galaxy Note 20">
+                    <h3>Samsung Galaxy Note 20</h3>
+                    <p>Precio: $900</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Pantalla: 6.2 pulgadas</li>
+                            <li>Memoria RAM: 8 GB</li>
+                            <li>Almacenamiento: 128 GB</li>
+                            <!-- Agregar más especificaciones según sea necesario -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="../Img/s.a54.png" alt="Samsung Galaxy A52">
+                    <h3>Samsung Galaxy A52</h3>
+                    <p>Precio: $600</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito">Agregar al carrito</button>
+
+                </div>
+                <!-- Continuar con más productos -->
+                <!-- Se repite la estructura para cada producto -->
+            </div>
+            <script>
+                // Delegamos el evento click desde el contenedor de productos
+                document.querySelector('.productos-container').addEventListener('click', function (event) {
+                    // Verificamos si el elemento clickeado es un botón "Agregar al carrito"
+                    if (event.target.classList.contains('agregar-carrito')) {
+                        // Llamamos a la función para agregar el producto al carrito
+                        agregarAlCarrito(event);
+                    }
+                });
+            </script>
+
+
+            <div class="button-2" id="load-more">Cargar más</div>
+
+    </main>
+    <section class="testimonial container">
+        <div class="testimonial-content">
+            <h2>Que opinan nuestros clientes</h2>
+            <div class="testimonial-text">
+                <div class="testimonial-1">
+                    <p>
+                        “Compré mi último teléfono en esta tienda online y quedé encantada. El proceso de financiamiento a cuotas fue rápido y sin complicaciones. Además, la atención al cliente fue excepcional. ¡Recomiendo esta tienda a todos mis amigos!” 
+                        <br>
+                         -María, cliente satisfecha
+                    </p>
+                    <img src="../img/estrella.png" alt="">
+                    <h4>Lorem impsum</h4>
+                </div>
+                <div class="testimonial-1">
+                    <p>
+                        Nunca pensé que comprar un celular a cuotas fuera tan fácil. Encontré el modelo que quería, seleccioné el plan de financiamiento y en pocos días tenía mi nuevo teléfono en casa. ¡Excelente servicio!”
+                        <br>
+                        -Juan, Usuario Feliz
+                    </p>
+                    <img src="../img/estrella.png" alt="">
+                    <h4>Lorem impsum</h4>
+                </div>
+                <div class="testimonial-1">
+                    <p>
+                        “La variedad de celulares disponibles en esta tienda es impresionante. Además, el proceso de financiamiento es transparente y flexible. Estoy muy contenta con mi compra y definitivamente volveré a comprar aquí.”
+                        <br>
+                        -Luisa, Experiencia positiva
+                    </p>
+                    <img src="../img/estrella.png" alt="">
+                    <h4>Lorem impsum</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Correo electrónico: info@example.com</a></li>
+                    <li><a href="#">Teléfono: +123456789</a></li>
+                    <li><a href="#">Dirección: </a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Newsletter</h3>
+                <p>Suscríbete a nuestro boletín para recibir las últimas novedades y ofertas.</p>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <img src="../Img/boot.png" class="logo-flotante" alt="" onclick="openChat()">
+
+    <div class="chat-popup" id="chat-popup">
+        <div class="chat-container">
+            <!-- Aquí irá el contenido del chat -->
+            <div class="chat-header">
+                <span class="close-btn" onclick="closeChat()">&times;</span>
+                <h2>Bienvenido al Chat de Celcuotas</h2>
+            </div>
+            <div class="chat-messages">
+                <!-- Aquí se mostrarán los mensajes del chat -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+            </div>
+            </div>
+            <script>
+                // Función para abrir la ventana emergente del chat
+                function openChat() {
+                    document.getElementById("chat-popup").classList.add("show");
+                }
+
+                // Función para cerrar la ventana emergente del chat
+                function closeChat() {
+                    document.getElementById("chat-popup").classList.remove("show");
+                }
+
+                // Función para enviar un mensaje en el chat (puedes personalizar esta función según tu necesidad)
+                function sendMessage() {
+                    var message = document.getElementById("chat-input").value;
+                    // Aquí puedes agregar el código para enviar el mensaje a través de alguna API o guardar el mensaje en algún lugar
+                    // Por ahora, solo mostraremos el mensaje en la ventana del chat
+                    var chatMessages = document.querySelector(".chat-messages");
+            chatMessages.innerHTML += "<div class='message'>Yo: " + message + "</div>";
+            document.getElementById("chat-input").value = "";
+        }
+        </script>
+
+    <script src="../JS/carrito.js">  </script>
+    
+<script>
+    const iframe = document.querySelector('iframe');
+
+// Rotar el iframe automáticamente
+//*let rotation = 0;
+//setInterval(() => {
+    //rotation += 5; // Incremento en grados
+    //iframe.style.transform = `rotateY(${rotation}deg)`;
+//}, 100); // Cambia la rotación cada 100 milisegundos (10 veces por segundo)
+
+</script>
+</body>
+
+</html>
