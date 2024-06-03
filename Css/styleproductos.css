@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 130px 0 0 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Agregar para centrar horizontalmente */
+}
+
+
+
+.logo {
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* CSS previo */
+
+.logo img {
+    max-height: 100px;
+    /* Ajusta la altura máxima de la imagen */
+    margin-right: 100px;
+    /* Ajusta el margen derecho para separar la imagen del texto */
+}
+
+
+
+.menu .navbar {
+    justify-content: center;
+    /* Centrar horizontalmente */
+}
+
+
+
+
+.menu .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+}
+
+.menu .navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*efecto barar de navegacion*/
+
+.menu .navbar ul li a:hover {
+    color: rgb(255, 145, 0);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: block;
+}
+
+
+.productos h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.productos p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de productos */
+.productos {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.marca-container {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    /* Cambia la dirección de flexión a horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+.marca-item {
+    width: calc(20% - 20px);
+    /* Establece el ancho del elemento para cinco elementos por fila */
+    margin: 10px;
+    /* Espacio entre los elementos */
+    text-align: center;
+    /* Centra horizontalmente el contenido */
+}
+
+.marca-item img {
+    max-width: 100px;
+    max-height: 100px;
+    /* Establece la altura máxima */
+    width: 100%;
+    /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+}
+
+
+
+/* Estilos para la seccion de productos del textosobre el video*/
+
+.text-overlay {
+    position: absolute;
+    top: 130%;
+    /* Ajusta la posición vertical */
+    left: 25%;
+    /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(13, 13, 13);
+}
+
+.text-overlay h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #111419;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    flex-basis: 25%;
+}
+
+.link h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link ul li {
+    margin-bottom: 10px;
+}
+
+.link ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link ul li a:hover {
+    color: #aaa;
+}
+.agregar-carrito + .favorito {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Elimina el relleno del botón */
+}
+

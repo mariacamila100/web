@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/stylecelulares.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="menu-icono.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Inicia Sesión</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="../Img/carrito-compras-desarrollo-tienda-virtual.png" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <a href="#" id="vaciar_carrito " class="btn-3"> Vaciar Carrito de Compras</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    </header>
+    <div class="buscador-container">
+        <input type="text" class="buscador-input" id="buscador-nombre" placeholder="Buscar por nombre">
+        <input type="number" class="buscador-input" id="buscador-precio" placeholder="Buscar por precio">
+        <div class="buscador-botones">
+            <button onclick="buscarPorNombre()">Buscar por nombre</button>
+            <button onclick="buscarPorPrecio()">Buscar por precio</button>
+            <button onclick="limpiarBusqueda()">Limpiar búsqueda</button>
+        </div>
+    </div>
+    <section class="productos">
+        <div class="container">
+            <h1>Productos MOTOROLA</h1>
+            <div class="productos-container">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="../Img/motorolag13.jpg" alt="Samsung Galaxy S21">
+                    <h3>MOTOROLA G13 </h3>
+                    <p>Precio: $500.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li> Pantalla 6.54  Pulgadas"</li>
+                            <li>Memoria RAM: 4 GB</li>
+                            <li>Almacenamiento: 128 GB</li>
+                            <li>Cámara Frontal 5 Mpx f/2.2</li>
+                            <li>Conectividad:4G</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="../Img/motoe22.jpg" alt="Samsung Galaxy Note 20">
+                    <h3>Motorola Moto E22</h3>
+                    <p>Precio: $400.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Pantalla: 6.4 pulgadas</li>
+                            <li>Memoria RAM: 4 GB</li>
+                            <li>Almacenamiento:128 GB</li>
+                            <li>SISTEMA OPERATIVO: Android</li>
+                         
+                            <!-- Agregar más especificaciones según sea necesario -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="../Img/motog84.jpg" alt="Samsung Galaxy A52">
+                    <h3>MOTOROLA G84</h3>
+                    <p>Precio:  $900.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li> Pantalla 6.5 pulgadas</li>
+                            <li>Memoria RAM: 8 GB</li>
+                            <li>Almacenamiento: 256 GB</li>
+                            <li>Cámara Frontal :16 Mpx</li>
+                            <li>Conectividad:5G</li>
+ 
+                            <!-- Agregar más especificaciones según sea necesario -->
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!-- Continuar con más productos -->
+
+              <!-- Producto 4 -->
+              <div class="producto">
+                <img src="../Img/motog14.jpg" alt="Samsung Galaxy S21">
+                <h3>Motorola G14 </h3>
+                <p>Precio: $505.000</p>
+                <input type="number" value="1" min="1">
+                <button class="agregar-carrito">Agregar al carrito</button>
+                <div class="especificaciones">
+                    <p>Especificaciones:</p>
+                    <ul>
+                        <li>Conectividad: 5G</li>
+                        <li>Memoria RAM: 4 GB</li>
+                        <li>Almacenamiento: 128 GB</li>
+                        <li>Marca y modelo del procesador: Unisoc T616</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="../Img/motg54.jpg" alt="Samsung Galaxy Note 20">
+                <h3> Motorola G54</h3>
+                <p>Precio: $680.000</p>
+                <input type="number" value="1" min="1">
+                <button class="agregar-carrito">Agregar al carrito</button>
+                <div class="especificaciones">
+                    <p>Especificaciones:</p>
+                    <ul>
+                        <li>Pantalla: 6.7 pulgadas</li>
+                        <li>Memoria RAM: 6 GB</li>
+                        <li>Almacenamiento: 128 GB</li>
+                        <!-- Agregar más especificaciones según sea necesario -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="../Img/motoedge.jpg" alt="Samsung Galaxy A52">
+                <h3>Motorola Edge Edge 40 Neo</h3>
+                <p>Precio: $1.200.000</p>
+                <input type="number" value="1" min="1">
+                <button class="agregar-carrito">Agregar al carrito</button>
+                <div class="especificaciones">
+                    <p>Especificaciones:</p>
+                    <ul>
+                        <li>Conectividad 5g</li>
+                        <li>Memoria RAM: 8 GB</li>
+                        <li>Almacenamiento: 256 GB</li>
+                        <!-- Agregar más especificaciones según sea necesario -->
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- Continuar con más productos -->
+
+
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function buscarPorNombre() {
+        var inputNombre = document.getElementById("buscador-nombre").value.toLowerCase(); // Obtener el valor del campo de búsqueda por nombre
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function(producto) {
+            var nombreProducto = producto.querySelector("h3").innerText.toLowerCase(); // Obtener el nombre del producto
+            if (nombreProducto.includes(inputNombre)) { // Comprobar si el nombre del producto contiene el texto buscado
+                producto.style.display = "block"; // Mostrar el producto si coincide con la búsqueda
+            } else {
+                producto.style.display = "none"; // Ocultar el producto si no coincide con la búsqueda
+            }
+        });
+    }
+
+    function buscarPorPrecio() {
+        var inputPrecio = parseFloat(document.getElementById("buscador-precio").value); // Obtener el valor del campo de búsqueda por precio
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function(producto) {
+            var precioProducto = parseFloat(producto.querySelector("p").innerText.split("$")[1]); // Obtener el precio del producto
+            if (precioProducto <= inputPrecio) { // Comprobar si el precio del producto es menor o igual al valor buscado
+                producto.style.display = "block"; // Mostrar el producto si coincide con la búsqueda
+            } else {
+                producto.style.display = "none"; // Ocultar el producto si no coincide con la búsqueda
+            }
+        });
+    }
+
+    function limpiarBusqueda() {
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function(producto) {
+            producto.style.display = "block"; // Mostrar todos los productos
+        });
+
+        document.getElementById("buscador-nombre").value = ""; // Limpiar el campo de búsqueda por nombre
+        document.getElementById("buscador-precio").value = ""; // Limpiar el campo de búsqueda por precio
+    }
+</script>
+
+</html>

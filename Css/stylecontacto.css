@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 130px 0 0 0;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Agregar para centrar horizontalmente */
+}
+
+
+
+.logo {
+    font-size: 25px;
+    color:rgb(255, 145, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta la altura máxima de la imagen */
+    margin-right: 200px; /* Ajusta el margen derecho para separar la imagen del texto */
+}
+
+/* CSS previo */
+
+.menu .navbar {
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+
+
+
+.menu .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+}
+
+.menu .navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+/*efecto barar de navegacion*/
+
+.menu .navbar ul li a:hover {
+    color: rgb(255, 145, 0);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: block;
+}
+
+
+
+
+.contacto {
+    padding: 50px 0; /* Espacio interno para la sección de contacto */
+    margin-top: -80px;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 400%;
+    color: rgb(255, 145, 0); /* Color naranja */
+    margin-bottom: 100px; /* Espacio inferior */
+    transition: transform 0.6s; /* Transición de transformación */
+}
+
+.contacto h2:hover {
+    transform: scale(1.08); /* Aumenta el tamaño al pasar el cursor */
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    align-items: center;
+}
+
+
+.formulario {
+    width: 90%; /* Ajustar el ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea {
+    width: calc(100% - 30px); /* Ajustar el ancho de los campos de entrada */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    resize: none; /* Evitar que el usuario pueda redimensionar el campo de texto */
+}
+
+.formulario button {
+    width: 50%; /* Ancho del botón al 50% del formulario */
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+    margin-left: 25%; /* Mover el botón hacia la derecha */
+    padding: 15px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.formulario button:hover {
+    background-color: #eccda1;
+}
+
+
+
+.redes-sociales {
+    background-color: #f8f8f8; /* Color de fondo gris claro */
+    padding: 60px 0;
+}
+
+.redes-sociales h2 {
+    text-align: center;
+    color: rgb(255, 145, 0);
+    margin-bottom: 40px;
+}
+
+.redes-sociales .iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales .iconos a {
+    color: rgb(255, 145, 0);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociales .iconos a:hover {
+    color: #ff9500;
+}
+.footer {
+    background-color: #111419;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    flex-basis: 25%;
+}
+
+.link h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link ul li {
+    margin-bottom: 10px;
+}
+
+.link ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link ul li a:hover {
+    color: #aaa;
+}

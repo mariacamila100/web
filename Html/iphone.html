@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/stylecelulares.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-HBcPro5w4ZWtrbMp/ElpsUBz4HIZVZjCkNp1iF8uA0cL4JjpYZ5XOGToxIiiwXV9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Productos</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu">
+            <div class="logo">
+                <img src="../Img/celcuotas.png" alt="Nombre de tu marca">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Inicia Sesión</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="../Img/carrito-compras-desarrollo-tienda-virtual.png" alt="car">
+                        <div id="carrito">
+                            <div id="contador-carrito"></div>
+
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <a href="#" id="vaciar_carrito " class="btn-3"> Vaciar Carrito de Compras</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <div class="buscador-container">
+        <input type="text" class="buscador-input" id="buscador-nombre" placeholder="Buscar por nombre">
+        <input type="number" class="buscador-input" id="buscador-precio" placeholder="Buscar por precio">
+        <div class="buscador-botones">
+            <button onclick="buscarPorNombre()">Buscar por nombre</button>
+            <button onclick="buscarPorPrecio()">Buscar por precio</button>
+            <button onclick="limpiarBusqueda()">Limpiar búsqueda</button>
+        </div>
+    </div>
+    <section class="productos">
+        <div class="container">
+            <h1>Productos Iphone</h1>
+            <div class="productos-container">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="../Img/iphone15.jpg" alt="Samsung Galaxy S21">
+                    <h3>iPhone 15 5G</h3>
+                    <p>Precio: $4.300.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('iphone15', 'iPhone 15 5G', 4300000)">Agregar al carrito</button>
+                    
+                    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+                        <i class="far fa-heart"></i>
+                    </button> <!-- Botón de favoritos -->
+                    
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Pantalla: 6,1 pulgadas</li>
+                            <li>Memoria RAM: 6 GB</li>
+                            <li>Almacenamiento: 128 GB</li>
+                            <li>Cámara Frontal : 48 Mpx</li>
+                            <li>Conectividad:5G</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="../Img/ihone14pro.jpg" alt="Samsung Galaxy Note 20">
+                    <h3>iPhone 14 Pro</h3>
+                    <p>Precio: $7.400.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('iphone 14 pro', 'iPhone 14 Pro', 7400000)">Agregar al carrito</button>
+                    
+                    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+                        <i class="far fa-heart"></i>
+                    </button> <!-- Botón de favoritos -->
+                    
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Pantalla: 6.8 pulgadas</li>
+                            <li>Almacenamiento: 1TB</li>
+                            <li>Camara Frontal: 48 Mpx</li>
+                            <li>Procesador Apple</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="producto">
+                    <img src="../Img/iphone13.jpg" alt="Samsung Galaxy A52">
+                    <h3>iPhone 13</h3>
+                    <p>Precio: $3.749.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('iphone13', 'iPhone 13', 3749000)">Agregar al carrito</button>
+                    
+                    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+                        <i class="far fa-heart"></i>
+                    </button> <!-- Botón de favoritos -->
+                    
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Procesador Apple</li>
+                            <li>Almacenamiento: 256 GB</li>
+                            <li>Conectividad:5G</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="producto">
+                    <img src="../Img/iphone12.jpg" alt="Samsung Galaxy S21">
+                    <h3>Iphone 12</h3>
+                    <p>Precio: $3.099.000</p>
+                    <input type="number" value="1" min="1">
+                    <button class="agregar-carrito" onclick="agregarAlCarrito('iphone12', 'iPhone 12', 3099000)">Agregar al carrito</button>
+                    
+                    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+                        <i class="far fa-heart"></i>
+                    </button> <!-- Botón de favoritos -->
+                    
+                    <div class="especificaciones">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Conectividad 5G</li>
+                            <li> Resolucion Pantalla 2532 x 1170 </li>
+                            <li>Almacenamiento: 256 GB</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+<div class="producto">
+    <img src="../Img/iphone15promax.jpg" alt="Samsung Galaxy Note 20">
+    <h3>iPhone 15 Pro Max</h3>
+    <p>Precio: $6.799.000</p>
+    <input type="number" value="1" min="1">
+    <button class="agregar-carrito" onclick="agregarAlCarrito('iphone15promax', 'iPhone 15 Pro Max', 6799000)">Agregar al carrito</button>
+    
+    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+        <i class="far fa-heart"></i>
+    </button> <!-- Botón de favoritos -->
+    
+    <div class="especificaciones">
+        <p>Especificaciones:</p>
+        <ul>
+            <li>Pantalla: 6.7 pulgadas</li>
+            <li>Memoria RAM: 8 GB</li>
+            <li>Almacenamiento: 256GB</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Producto 6 -->
+<div class="producto">
+    <img src="../Img/iphonexr.jpg" alt="Samsung Galaxy A52">
+    <h3>iPhone XR</h3>
+    <p>Precio: $2.800.000</p>
+    <input type="number" value="1" min="1">
+    <button class="agregar-carrito" onclick="agregarAlCarrito('iphonexr', 'iPhone XR', 2800000)">Agregar al carrito</button>
+    
+    <button class="favorito" id="boton-favorito" onclick="toggleFavorito(this)">
+        <i class="far fa-heart"></i>
+    </button> <!-- Botón de favoritos -->
+    
+    <div class="especificaciones">
+        <p>Especificaciones:</p>
+        <ul>
+            <li>Pantalla 6.1 pulgadas</li>
+            <li>Memoria RAM: 12 GB</li>
+            <li>Sistema de cámara única de 12 MP</li>
+        </ul>
+    </div>
+
+                </div>
+                <!-- Continuar con más productos -->
+
+
+            </div>
+        </div>
+    </section>
+    <script src="../JS/car.js"></script>
+
+</body>
+<script>
+    function buscarPorNombre() {
+        var inputNombre = document.getElementById("buscador-nombre").value.toLowerCase(); // Obtener el valor del campo de búsqueda por nombre
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function (producto) {
+            var nombreProducto = producto.querySelector("h3").innerText.toLowerCase(); // Obtener el nombre del producto
+            if (nombreProducto.includes(inputNombre)) { // Comprobar si el nombre del producto contiene el texto buscado
+                producto.style.display = "block"; // Mostrar el producto si coincide con la búsqueda
+            } else {
+                producto.style.display = "none"; // Ocultar el producto si no coincide con la búsqueda
+            }
+        });
+    }
+
+    function buscarPorPrecio() {
+        var inputPrecio = parseFloat(document.getElementById("buscador-precio").value); // Obtener el valor del campo de búsqueda por precio
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function (producto) {
+            var precioProducto = parseFloat(producto.querySelector("p").innerText.split("$")[1]); // Obtener el precio del producto
+            if (precioProducto <= inputPrecio) { // Comprobar si el precio del producto es menor o igual al valor buscado
+                producto.style.display = "block"; // Mostrar el producto si coincide con la búsqueda
+            } else {
+                producto.style.display = "none"; // Ocultar el producto si no coincide con la búsqueda
+            }
+        });
+    }
+
+    function limpiarBusqueda() {
+        var productos = document.querySelectorAll(".producto"); // Seleccionar todos los elementos con la clase "producto"
+
+        productos.forEach(function (producto) {
+            producto.style.display = "block"; // Mostrar todos los productos
+        });
+
+        document.getElementById("buscador-nombre").value = ""; // Limpiar el campo de búsqueda por nombre
+        document.getElementById("buscador-precio").value = ""; // Limpiar el campo de búsqueda por precio
+    }
+</script>
+<script>
+    // Función para cambiar el estado de favorito y el color del corazón al hacer clic
+function toggleFavorito(btn) {
+    btn.classList.toggle('activo');
+}
+
+</script>
+<script>
+    function agregarFavorito(producto_id) {
+    fetch('../php/fav.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            producto_id: producto_id
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error al agregar a favoritos');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Manejar la respuesta si es necesario
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: rgb(221, 217, 217);
+}
+
+.aside{
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
+    position: fixed;
+    padding: 10px;
+    transition: all 250ms ease;
+
+}
+
+/*Modificaciones cuando se cierre el menu*/
+.aside.active{
+    width: 70px;
+    transition: all 250ms ease;
+}
+
+.aside.active .option{
+    display: none;
+}
+
+.aside.active .profile{
+    display: none;
+}
+
+.aside.active .head i {
+margin: auto;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.head img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.head i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.options div{
+display: flex;
+align-items: center;
+padding: 15px;
+cursor: pointer;
+margin-bottom: 5px;
+border-radius: 10px;
+font-size: 1.1rem;
+}
+
+.options div:hover{
+    background-color: rgba(236, 159, 96, 0.254);
+    transition: all .1s ease-in-out;
+}
+
+.options i{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+
+.salir{
+    text-decoration: none; 
+    color: rgb(6, 6, 6); 
+  }

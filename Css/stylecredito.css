@@ -1,0 +1,266 @@
+/* Estilos previos */
+
+.menu .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.menu .navbar ul li {
+  font-size: 18px;
+  padding: 100px; /* Ajusta el relleno para el espaciado */
+  color: black;
+  list-style: none; /* Elimina los puntos de viñeta */
+  margin-left: 50px; /* Agrega espacio entre los lados izquierdos de los elementos */
+}
+
+/*efecto barar de navegacion*/
+
+.menu .navbar ul li a:hover {
+  color: rgb(255, 145, 0);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: block;
+}
+
+/* Estilos adicionales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 130px 0 0 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Agregar para centrar horizontalmente */
+}
+
+
+.logo {
+  font-size: 25px;
+  color: rgb(255, 145, 0);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* CSS previo */
+
+.logo img {
+  max-height: 100px;
+  /* Ajusta la altura máxima de la imagen */
+  margin-right: 100px;
+  /* Ajusta el margen derecho para separar la imagen del texto */
+}
+
+
+
+.menu .navbar {
+  justify-content: center;
+  /* Centrar horizontalmente */
+}
+
+
+
+
+.menu .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu .navbar ul li {
+  font-size: 18px;
+  padding: 20px;
+  color: black;
+}
+
+.menu .navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*efecto barar de navegacion*/
+
+.menu .navbar ul li a:hover {
+  color: rgb(255, 145, 0);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: block;
+}
+
+
+.welcome-message {
+  margin-bottom: 20px;
+}
+
+.reason-to-get-credit {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.progress-container,
+#form-container {
+  margin-bottom: 40px;
+}
+
+
+
+/* Estilos de la barra de progreso */
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+  
+  .progress-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  
+  /* Estilos para los formularios */
+  .form-step {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #form-container {
+    text-align: center;
+  }
+  /* Estilos para los formularios */
+.form-step {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .form-step h2 {
+    margin-bottom: 20px; /* Espaciado inferior para el título */
+  }
+  
+  .form-step label {
+    display: block; /* Mostrar en bloque */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  .form-step input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .form-step button {
+    background-color: orange; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de apuntar */
+  }
+  
+  .form-step button:hover {
+    background-color:rgb(255, 128, 0); /* Color de fondo al pasar el mouse */
+  }
+  .footer {
+    background-color: #111419;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    flex-basis: 25%;
+}
+
+.link h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link ul li {
+    margin-bottom: 10px;
+}
+
+.link ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link ul li a:hover {
+    color: #aaa;
+}  

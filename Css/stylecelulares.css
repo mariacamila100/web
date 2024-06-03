@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 130px 0 0 0;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Agregar para centrar horizontalmente */
+}
+
+
+
+.menu .navbar {
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  /* CSS previo */
+  
+  .logo img {
+    max-height: 100px;
+    /* Ajusta la altura máxima de la imagen */
+    margin-right: 100px;
+    /* Ajusta el margen derecho para separar la imagen del texto */
+  }
+  
+
+
+.menu .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+}
+
+.menu .navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+/*efecto barar de navegacion*/
+
+.menu .navbar ul li a:hover {
+    color: rgb(255, 145, 0);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: block;
+}
+
+
+/*Sección de productos*/
+.productos {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.productos h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: calc(33.33% - 20px); /* Tres productos por fila */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.producto h3 {
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.producto button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #e47724;
+}
+
+.producto {
+    position: relative; /* Agregamos esta línea para establecer la posición relativa */
+    /* Resto de estilos... */
+}
+
+.producto .especificaciones {
+    display: none;
+    position: absolute;
+    top: -120%; /* Movemos las especificaciones hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.producto:hover .especificaciones {
+    display: block;
+    top: -5%; /* Movemos las especificaciones arriba del contenedor del producto al pasar el cursor */
+}
+
+
+.buscador-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.buscador-input {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc; /* Añadimos un borde gris */
+    border-radius: 5px; /* Añadimos bordes redondeados */
+}
+
+.buscador-botones {
+    margin-top: 10px;
+}
+
+/* Estilo para los botones */
+.buscador-botones button {
+    padding: 8px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: orange; /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    border: none; /* Quitamos el borde */
+    border-radius: 5px; /* Añadimos bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Cambiamos el color del botón al pasar el cursor sobre él */
+.buscador-botones button:hover {
+    background-color: #ff8c00; /* Color de fondo naranja más oscuro */
+}
+/* Estilo del icono de favoritos */
+#boton-favorito {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Elimina el relleno del botón */
+}
+
+/* Estilo del corazón (icono) */
+.favorito i {
+    color: black;
+    /* Color predeterminado del corazón */
+    font-size: 24px;
+    /* Tamaño del icono del corazón */
+}
+
+/* Estilo del corazón cuando está marcado */
+.favorito.activo i {
+    color: red;
+    /* Cambiar el color del corazón a rojo cuando esté marcado */
+}
